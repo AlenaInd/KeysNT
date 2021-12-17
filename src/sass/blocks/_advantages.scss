@@ -1,0 +1,32 @@
+.advantages {
+    position: relative;
+    .divider {
+        margin-top: 40px;
+    }
+    &__header {
+        text-align: center;
+        font-size: 46px;
+        font-weight: 700;
+    }
+    &__wrapper {
+        width: 98%;
+        display: grid;
+        justify-content: center;
+        margin: 60px 20px 40px 20px;
+        row-gap: 50px;
+        grid-template-columns: repeat( auto-fit, minmax(230px, 1fr) );
+
+        img {
+            width: 50%;
+            height: 50%;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    &__descr {
+        text-align: center;
+        font-size: 28px;
+        font-weight: 400;
+        margin-top: 40px;
+    }
+}

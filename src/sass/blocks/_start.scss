@@ -1,0 +1,19 @@
+.start {
+    z-index: -1;
+    min-height: 45vh;
+    position: relative;
+    background: url(../img/lost-keys.jpg) no-repeat 50%/cover;
+
+    &__name {
+        
+        font-size: 46px;
+        color: #fff;
+        text-align: center;
+        padding-top: 90px;
+        @include before_rectangle;
+        &::before {
+            top: 19%;
+        }
+        
+    }
+}

@@ -1,0 +1,162 @@
+@media (max-width: 1800px) {
+    .services {
+        &__wrapper {
+            width: 70%;
+        }
+        &__header {
+            margin-top: 40px;
+            font-size: 77px;
+        }
+        &__list-descr {
+            font-size: 36px;
+        }
+    }
+    .contacts {
+        &__name {
+            font-size: 34px;
+        }
+    }
+    .start {
+        &__name {
+            &::before {
+                top: 13%;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 801px) {
+    .services {
+        img {
+            width: 20%;
+            height: 20%;
+        }
+        &__wrapper {
+            row-gap: 10px;
+        }
+        &__list-descr {
+            padding-top: 10px;
+        }
+    }
+    .contacts {
+        &__name {
+            font-size: 32px;
+        }
+    }
+    .adress {
+        &__adr, &__position {
+            text-align: center;;
+        }
+    }
+    
+}
+
+@media screen and (max-width: 670px) {
+    * {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+
+    }
+   
+    .map {
+        &__wrapper {
+            margin: 0;
+        }
+        &__about {
+            font-size: 24px;
+            li {
+                padding: 5px 0 5px 0;
+            }
+        }
+        &__header {
+            font-size: 40px;
+        }
+    }
+    .contacts {
+        &__name {
+            font-size: 25px;
+            width: 100%;
+            line-height: 31px;
+        }
+        .divider {
+            background: none;
+        }
+        &__list-social {
+            width: 260px;
+        }
+        &__list-time, &__list-phone {
+            font-size: 27px;
+        }
+    }
+    .start {
+        &__name {
+            &::before {
+                top: 28%;
+            }
+        }
+    }
+    .advantages {
+        &__header {
+            font-size: 38px;
+        }
+        &__wrapper {
+            width: 80%;
+            margin: 0px 40px 40px 34px;
+            img {
+                width: 35%;
+                height: 35%;
+            }
+        }
+        &__descr {
+            margin-top: 13px;
+        }
+    }
+    .adress {
+        &__adr {
+            font-size: 26px;
+            font-weight: 600;
+            margin-top: 10px;
+            text-align: center;
+        }
+        &__position {
+            font-size: 23px;
+            margin-top: 10px;
+            text-align: center;
+        }
+    }
+    .services {
+        &__wrapper {
+            margin-top: 10px;
+        }
+        &__header {
+            margin-top: 10px;
+            font-size: 67px;
+        }
+        &__list {
+            padding: 5px;
+            margin: 10px
+        }
+        &__list-descr {
+            font-size: 30px;
+        }
+    }
+}
+@media screen and (max-width: 370px) {
+    .contacts {
+        &__list-time {
+            font-size: 23px;
+        }
+    }
+    .services {
+        &__header {
+            margin-top: 4px;
+            font-size: 54px;
+        }
+        &__list-descr {
+            font-size: 24px;
+        }
+    }
+}
+

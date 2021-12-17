@@ -1,0 +1,469 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.divider {
+  width: 100%;
+  height: 3px;
+  margin: 0 auto 0 auto;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(50%, #3333FF), to(rgba(255, 255, 255, 0)));
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, #3333FF 50%, rgba(255, 255, 255, 0) 100%);
+  background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, #3333FF 50%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #3333FF 50%, rgba(255, 255, 255, 0) 100%);
+}
+
+.start {
+  z-index: -1;
+  min-height: 45vh;
+  position: relative;
+  background: url(../img/lost-keys.jpg) no-repeat 50%/cover;
+}
+
+.start__name {
+  font-size: 46px;
+  color: #fff;
+  text-align: center;
+  padding-top: 90px;
+}
+
+.start__name:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 22%;
+  left: 0%;
+  width: 100%;
+  height: 100px;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(50%, #3333FF), to(rgba(255, 255, 255, 0)));
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, #3333FF 50%, rgba(255, 255, 255, 0) 100%);
+  background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, #3333FF 50%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #3333FF 50%, rgba(255, 255, 255, 0) 100%);
+}
+
+.start__name::before {
+  top: 19%;
+}
+
+.contacts {
+  position: relative;
+}
+
+.contacts__name {
+  margin: 0 auto;
+  height: 100px;
+  width: 70%;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 7px;
+}
+
+.contacts__name:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 22%;
+  left: 0%;
+  width: 100%;
+  height: 100px;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(50%, #3333FF), to(rgba(255, 255, 255, 0)));
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, #3333FF 50%, rgba(255, 255, 255, 0) 100%);
+  background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, #3333FF 50%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #3333FF 50%, rgba(255, 255, 255, 0) 100%);
+}
+
+.contacts__name:before {
+  top: 0%;
+  height: 100px;
+}
+
+.contacts .divider {
+  position: absolute;
+  top: 50px;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(15%, #3333FF), color-stop(25%, #3333FF), color-stop(35%, rgba(255, 255, 255, 0)), color-stop(65%, rgba(255, 255, 255, 0)), color-stop(80%, #3333FF), color-stop(85%, #3333FF), to(rgba(255, 255, 255, 0)));
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, #3333FF 15%, #3333FF 25%, rgba(255, 255, 255, 0) 35%, rgba(255, 255, 255, 0) 65%, #3333FF 80%, #3333FF 85%, rgba(255, 255, 255, 0) 100%);
+  background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, #3333FF 15%, #3333FF 25%, rgba(255, 255, 255, 0) 35%, rgba(255, 255, 255, 0) 65%, #3333FF 80%, #3333FF 85%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #3333FF 15%, #3333FF 25%, rgba(255, 255, 255, 0) 35%, rgba(255, 255, 255, 0) 65%, #3333FF 80%, #3333FF 85%, rgba(255, 255, 255, 0) 100%);
+}
+
+.contacts__list {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contacts__list-time {
+  font-size: 35px;
+  padding-top: 25px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.contacts__list-phone {
+  font-size: 35px;
+  padding-top: 25px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.contacts__list-phone a {
+  text-decoration: none;
+  color: #000;
+}
+
+.contacts__list-phone a:hover {
+  color: #666;
+}
+
+.contacts__list-social {
+  position: relative;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -webkit-filter: drop-shadow(0 0 20px transparent);
+          filter: drop-shadow(0 0 20px transparent);
+  -webkit-transition-duration: 0.5s;
+       -o-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.contacts__list-social:hover {
+  -webkit-filter: drop-shadow(0 0 20px #3333FF);
+          filter: drop-shadow(0 0 20px #3333FF);
+}
+
+.contacts__list-social img {
+  width: 80px;
+  height: 80px;
+  position: relative;
+}
+
+.contacts__list-whatsapp {
+  display: inline-block;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.adress .divider {
+  margin-top: 30px;
+}
+
+.adress__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  position: relative;
+  margin-top: 15px;
+}
+
+.adress__photo {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.adress__adr {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 40px;
+}
+
+.adress__position {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  font-size: 30px;
+  font-weight: 600px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.services {
+  position: relative;
+}
+
+.services .divider {
+  margin-top: 40px;
+}
+
+.services__header {
+  text-align: center;
+  font-size: 46px;
+  font-weight: 700;
+}
+
+.services__wrapper {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 80%;
+  list-style-type: none;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  -webkit-column-gap: 60px;
+     -moz-column-gap: 60px;
+          column-gap: 60px;
+  row-gap: 60px;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.services__list {
+  padding: 15px;
+  margin: 15px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.services__list-descr {
+  text-align: center;
+  font-size: 25px;
+  padding-top: 25px;
+  font-weight: 600;
+}
+
+.services img {
+  width: 50%;
+  height: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.advantages {
+  position: relative;
+}
+
+.advantages .divider {
+  margin-top: 40px;
+}
+
+.advantages__header {
+  text-align: center;
+  font-size: 46px;
+  font-weight: 700;
+}
+
+.advantages__wrapper {
+  width: 98%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 60px 20px 40px 20px;
+  row-gap: 50px;
+  -ms-grid-columns: (minmax(230px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
+
+.advantages__wrapper img {
+  width: 50%;
+  height: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.advantages__descr {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 400;
+  margin-top: 40px;
+}
+
+.map {
+  position: relative;
+}
+
+.map .divider {
+  margin-top: 40px;
+}
+
+.map__header {
+  text-align: center;
+  font-size: 46px;
+  font-weight: 700;
+}
+
+.map__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 60px 40px 40px 40px;
+  -webkit-column-gap: 60px;
+     -moz-column-gap: 60px;
+          column-gap: 60px;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.map__map {
+  width: 100%;
+}
+
+.map__about {
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+  padding-top: 0px;
+}
+
+.map__about li {
+  list-style-type: none;
+  padding: 15px 0 15px 0;
+}
+
+.map__about a {
+  text-decoration: none;
+  color: #000;
+}
+
+.map__about a:hover {
+  color: #666;
+}
+
+@media (max-width: 1800px) {
+  .services__wrapper {
+    width: 70%;
+  }
+  .services__header {
+    margin-top: 40px;
+    font-size: 77px;
+  }
+  .services__list-descr {
+    font-size: 36px;
+  }
+  .contacts__name {
+    font-size: 34px;
+  }
+  .start__name::before {
+    top: 13%;
+  }
+}
+
+@media screen and (max-width: 801px) {
+  .services img {
+    width: 20%;
+    height: 20%;
+  }
+  .services__wrapper {
+    row-gap: 10px;
+  }
+  .services__list-descr {
+    padding-top: 10px;
+  }
+  .contacts__name {
+    font-size: 32px;
+  }
+  .adress__adr, .adress__position {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  * {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .map__wrapper {
+    margin: 0;
+  }
+  .map__about {
+    font-size: 24px;
+  }
+  .map__about li {
+    padding: 5px 0 5px 0;
+  }
+  .map__header {
+    font-size: 40px;
+  }
+  .contacts__name {
+    font-size: 25px;
+    width: 100%;
+    line-height: 31px;
+  }
+  .contacts .divider {
+    background: none;
+  }
+  .contacts__list-social {
+    width: 260px;
+  }
+  .contacts__list-time, .contacts__list-phone {
+    font-size: 27px;
+  }
+  .start__name::before {
+    top: 28%;
+  }
+  .advantages__header {
+    font-size: 38px;
+  }
+  .advantages__wrapper {
+    width: 80%;
+    margin: 0px 40px 40px 34px;
+  }
+  .advantages__wrapper img {
+    width: 35%;
+    height: 35%;
+  }
+  .advantages__descr {
+    margin-top: 13px;
+  }
+  .adress__adr {
+    font-size: 26px;
+    font-weight: 600;
+    margin-top: 10px;
+    text-align: center;
+  }
+  .adress__position {
+    font-size: 23px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  .services__wrapper {
+    margin-top: 10px;
+  }
+  .services__header {
+    margin-top: 10px;
+    font-size: 67px;
+  }
+  .services__list {
+    padding: 5px;
+    margin: 10px;
+  }
+  .services__list-descr {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .contacts__list-time {
+    font-size: 23px;
+  }
+  .services__header {
+    margin-top: 4px;
+    font-size: 54px;
+  }
+  .services__list-descr {
+    font-size: 24px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
