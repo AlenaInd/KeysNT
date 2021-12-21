@@ -18,6 +18,7 @@
     }
     .start {
         &__name {
+            padding-top: 64px;
             &::before {
                 top: 13%;
             }
@@ -52,6 +53,22 @@
     
 }
 
+@media screen and (max-width: 815px) {
+    .start {
+        &__name {
+            padding-top: 39px;
+        }
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .start {
+        &__name {
+            padding-top: 66px;
+        }
+    }
+}
+
 @media screen and (max-width: 670px) {
     * {
         width: 100%;
@@ -78,7 +95,7 @@
         &__name {
             font-size: 25px;
             width: 100%;
-            line-height: 31px;
+            line-height: 40px;
         }
         .divider {
             background: none;
@@ -92,6 +109,7 @@
     }
     .start {
         &__name {
+            padding-top: 70px;
             &::before {
                 top: 28%;
             }
@@ -103,7 +121,8 @@
         }
         &__wrapper {
             width: 80%;
-            margin: 0px 40px 40px 34px;
+            margin: 30px 40px 40px 55px;
+            grid-template-columns: repeat( auto-fit, minmax(290px, 1fr) );
             img {
                 width: 35%;
                 height: 35%;
@@ -132,7 +151,7 @@
         }
         &__header {
             margin-top: 10px;
-            font-size: 67px;
+            font-size: 50px;
         }
         &__list {
             padding: 5px;
@@ -143,7 +162,15 @@
         }
     }
 }
-@media screen and (max-width: 370px) {
+
+@media screen and (max-width: 415px) {
+    .start {
+        &__name {
+            padding-top: 107px;
+        }
+    }
+}
+@media screen and (max-width: 376px) {
     .contacts {
         &__list-time {
             font-size: 23px;
@@ -156,6 +183,11 @@
         }
         &__list-descr {
             font-size: 24px;
+        }
+    }
+    .start {
+        &__name {
+            padding-top: 107px;
         }
     }
 }
